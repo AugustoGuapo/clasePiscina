@@ -17,6 +17,8 @@ public class ClasePiscina {
         // TODO code application logic here
         vista ventana = new vista();
         ventana.setVisible(true);
+        modelo obj = new modelo();
+        System.out.println(obj.totalAreaBaldosa());
     }
     
 }

@@ -61,7 +61,7 @@
                               </Group>
                               <Component id="jLabel4" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="2" attributes="0">
-                                  <Component id="anchoEntrada" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="entradaAncho" min="-2" pref="80" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
@@ -74,25 +74,32 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabel6" max="32767" attributes="0"/>
-                                  <Component id="concretoSalida" min="-2" pref="49" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                  <Component id="concretoSalida" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="totalSalida" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="concretoCeramica" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                      </Group>
+                                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                          <Component id="aguaSalida" min="-2" pref="54" max="-2" attributes="0"/>
+                                          <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="ceramicaSalida" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
                                       </Group>
+                                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="aguaSalida" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
+                                      <Component id="totalSalida" max="32767" attributes="0"/>
+                                      <EmptySpace pref="104" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -119,7 +126,7 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="anchoEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="entradaAncho" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="entradaLargo" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="entradaProfundidad" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -132,7 +139,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="concretoSalida" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="concretoCeramica" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ceramicaSalida" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="aguaSalida" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -153,7 +160,7 @@
             <Property name="text" type="java.lang.String" value="Ancho"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="anchoEntrada">
+        <Component class="javax.swing.JTextField" name="entradaAncho">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
@@ -199,7 +206,7 @@
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="concretoCeramica">
+        <Component class="javax.swing.JLabel" name="ceramicaSalida">
           <Properties>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>

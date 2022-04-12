@@ -16,7 +16,7 @@ public class vista extends javax.swing.JFrame {
     public vista() {
         initComponents();
     }
-
+    modelo cotizador = new modelo();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,7 +28,7 @@ public class vista extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        anchoEntrada = new javax.swing.JTextField();
+        entradaAncho = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -39,7 +39,7 @@ public class vista extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         concretoSalida = new javax.swing.JLabel();
-        concretoCeramica = new javax.swing.JLabel();
+        ceramicaSalida = new javax.swing.JLabel();
         aguaSalida = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         totalSalida = new javax.swing.JLabel();
@@ -65,7 +65,7 @@ public class vista extends javax.swing.JFrame {
 
         concretoSalida.setText("0");
 
-        concretoCeramica.setText("0");
+        ceramicaSalida.setText("0");
 
         aguaSalida.setText("0");
 
@@ -98,7 +98,7 @@ public class vista extends javax.swing.JFrame {
                                 .addComponent(jLabel5))
                             .addComponent(jLabel4)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(anchoEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(entradaAncho, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(35, 35, 35)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jButton1)
@@ -107,22 +107,27 @@ public class vista extends javax.swing.JFrame {
                                         .addGap(22, 22, 22)
                                         .addComponent(entradaProfundidad, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(29, 29, 29)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(concretoSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(65, 65, 65)
+                            .addGap(13, 13, 13)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel12)
+                                .addComponent(concretoSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel6))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(totalSalida, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(concretoCeramica, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(65, 65, 65)
+                                    .addComponent(jLabel12))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addGap(50, 50, 50)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(ceramicaSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(39, 39, 39)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel8)
-                                        .addComponent(aguaSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(aguaSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGap(65, 65, 65)
+                                    .addComponent(totalSalida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)))))
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
@@ -141,7 +146,7 @@ public class vista extends javax.swing.JFrame {
                         .addComponent(jLabel5))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(anchoEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(entradaAncho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(entradaLargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(entradaProfundidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(18, 18, 18)
@@ -152,7 +157,7 @@ public class vista extends javax.swing.JFrame {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(concretoSalida)
-                        .addComponent(concretoCeramica)
+                        .addComponent(ceramicaSalida)
                         .addComponent(aguaSalida))
                     .addGap(18, 18, 18)
                     .addComponent(jLabel12)
@@ -185,6 +190,14 @@ public class vista extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        cotizador.setAncho(Float.parseFloat(entradaAncho.getText()));
+        cotizador.setLargo(Float.parseFloat(entradaLargo.getText()));
+        cotizador.setProfundidad(Float.parseFloat(entradaProfundidad.getText()));
+        concretoSalida.setText(String.valueOf(cotizador.costoCemento()));
+        ceramicaSalida.setText(String.valueOf(cotizador.costoBaldosa()));
+        aguaSalida.setText(String.valueOf(cotizador.costoAgua()));
+        totalSalida.setText(String.valueOf(cotizador.costoTotalObra()));
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -224,9 +237,9 @@ public class vista extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel aguaSalida;
-    private javax.swing.JTextField anchoEntrada;
-    private javax.swing.JLabel concretoCeramica;
+    private javax.swing.JLabel ceramicaSalida;
     private javax.swing.JLabel concretoSalida;
+    private javax.swing.JTextField entradaAncho;
     private javax.swing.JTextField entradaLargo;
     private javax.swing.JTextField entradaProfundidad;
     private javax.swing.JButton jButton1;
